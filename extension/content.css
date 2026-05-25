@@ -1,0 +1,79 @@
+#cybersec-shield-warning-banner {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 2147483647 !important;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35) !important;
+  animation: cybersec-slide-down 0.35s ease-out !important;
+}
+
+#cybersec-shield-warning-banner .cybersec-banner__inner {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  padding: 14px 20px !important;
+  background: linear-gradient(90deg, #7f1d1d 0%, #dc2626 45%, #b91c1c 100%) !important;
+  color: #fff !important;
+  border-bottom: 3px solid #fecaca !important;
+}
+
+#cybersec-shield-warning-banner .cybersec-banner__icon {
+  flex-shrink: 0 !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: grid !important;
+  place-items: center !important;
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 10px !important;
+}
+
+#cybersec-shield-warning-banner .cybersec-banner__text {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 4px !important;
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+#cybersec-shield-warning-banner .cybersec-banner__text strong {
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.02em !important;
+}
+
+#cybersec-shield-warning-banner .cybersec-banner__text span {
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  opacity: 0.95 !important;
+}
+
+#cybersec-shield-warning-banner .cybersec-banner__dismiss {
+  flex-shrink: 0 !important;
+  border: none !important;
+  background: rgba(0, 0, 0, 0.25) !important;
+  color: #fff !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  font-size: 16px !important;
+}
+
+#cybersec-shield-warning-banner .cybersec-banner__dismiss:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+@keyframes cybersec-slide-down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
